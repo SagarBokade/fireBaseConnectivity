@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -26,128 +26,10 @@ body{
     overflow-y: hidden;
     overflow-y: auto; /* Set overflow-y to auto */
 }
+
 a{
   text-decoration:none;
   color:#444444;
-}
-.login-reg-panel{
-    position: relative;
-    top: 43%;
-    transform: translateY(-50%);
-	text-align:center;
-    width:70%;
-	right:0;left:0;
-    margin:auto;
-    height:400px;
-    background-color:rgb(2, 32, 109);
-}
-.white-panel{
-    background-color: rgba(255,255, 255, 1);
-    height:500px;
-    position:absolute;
-    top:-50px;
-    width:50%;
-    right:calc(50% - 50px);
-    transition:.3s ease-in-out;
-    z-index:0;
-    box-shadow: 0 0 15px 9px #00000096;
-}
-.login-reg-panel input[type="radio"]{
-    position:relative;
-    display:none;
-}
-.login-reg-panel{
-    color:#B8B8B8;
-}
-.login-reg-panel #label-login, 
-.login-reg-panel #label-register{
-    border:1px solid #9E9E9E;
-    padding:5px 5px;
-    width:150px;
-    display:block;
-    text-align:center;
-    border-radius:10px;
-    cursor:pointer;
-    font-weight: 600;
-    font-size: 18px;
-}
-.login-info-box{
-    width:30%;
-    padding:0 50px;
-    top:20%;
-    left:0;
-    position:absolute;
-    text-align:left;
-}
-.register-info-box{
-    width:30%;
-    padding:0 50px;
-    top:20%;
-    right:0;
-    position:absolute;
-    text-align:left;
-    
-}
-.right-log{right:50px !important;}
-
-.login-show, 
-.register-show{
-    z-index: 1;
-    display:none;
-    opacity:0;
-    transition:0.3s ease-in-out;
-    color:#242424;
-    text-align:left;
-    padding:50px;
-}
-.show-log-panel{
-    display:block;
-    opacity:0.9;
-}
-.login-show input[type="text"], .login-show input[type="password"]{
-    width: 100%;
-    display: block;
-    margin:20px 0;
-    padding: 15px;
-    border: 1px solid #b5b5b5;
-    outline: none;
-}
-.login-show input[type="button"] {
-    max-width: 150px;
-    width: 100%;
-    background: #444444;
-    color: #f9f9f9;
-    border: none;
-    padding: 10px;
-    text-transform: uppercase;
-    border-radius: 2px;
-    float:right;
-    cursor:pointer;
-}
-.login-show a{
-    display:inline-block;
-    padding:10px 0;
-}
-
-.register-show input[type="text"], .register-show input[type="password"]{
-    width: 100%;
-    display: block;
-    margin:20px 0;
-    padding: 15px;
-    border: 1px solid #b5b5b5;
-    outline: none;
-}
-.register-show input[type="button"] {
-    max-width: 150px;
-    width: 100%;
-    background: #444444;
-    color: #f9f9f9;
-    border: none;
-    padding: 10px;
-    text-transform: uppercase;
-    border-radius: 2px;
-    float:right;
-    cursor:pointer;
 }
 .credit {
     position:absolute;
@@ -169,22 +51,67 @@ a{
 }
 .container-fluid{
     background-color: rgb(2, 32, 109);
+    height: 43px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 40;
+    font-weight: 400;
 }
 .nav-link,.navbar-brand,.nav-link,.active,.navbar-nav{
     color: #B8B8B8;
     margin-left: 60px;
     font-weight: bolder; font-size: medium;
+    
 }
 .row ,.text-center ,.text-xs-center ,.text-sm-left ,.text-md-left,.ul-list-unstyled {
     color: #B8B8B8;
 }
-.btn{
-    margin-left: 80%;
+
+#notification{
+
+  overflow: hidden;
+}
+
+#notificationtxt{
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
 }
  </style>
  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">E-Waste <img src="icon-removebg-preview.png" height="30px" alt="logo"></a>
+      <a class="navbar-brand" style="font-size: 20px;" href="#">E-Waste <img src="icon-removebg-preview.png" height="30px" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="color: #B8B8B8;">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -198,134 +125,185 @@ a{
       </div>
     </div>
   </nav>
-<div class="login-reg-panel">
-		<div class="login-info-box">
-			<h2>Have an account?</h2>
-			<p>Welcome Back!! <br> Login to your E-Waste Locator Accout now</p>
-			<label id="label-register" for="log-reg-show">Login</label>
-			<input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
-		</div>
-							
-		<div class="register-info-box">
-			<h2>Don't have an account?</h2>
-			<p>Sign Up to E-Waste locator now</p>
-			<label id="label-login" for="log-login-show">Register</label>
-			<input type="radio" name="active-log-panel" id="log-login-show">
-		</div>
-							
-		<div class="white-panel">
-			<div class="login-show">
-				<h2>LOGIN</h2>
-				<input type="text" placeholder="Email">
-				<input type="password" placeholder="Password">
-				<a href="">Forgot password?</a>
-                <button type="submit" class="btn btn-primary">Login</button>
-			</div>
-			<div class="register-show">
-				<h2>hey! Signup </h2>
-				<input type="text" placeholder="Name">
-				<input type="text" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <button type="submit" class="btn btn-primary">Signup</button>
-            </div>
-				
-		</div>
-	</div>
-</div>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-s
-  <!-- Footer -->
-  <section id="footer" style="margin-top: 300px; background-color:rgb(2, 32, 109); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 16px; font-weight: bold;">
-    <div class="container">
-        <div class="row text-center text-xs-center text-sm-left text-md-left">
-            <div class="col-xs-12 col-sm-4 col-md-4" style="margin-top: 35px;">
-                <h5 style="font-size: 20px;">Quick links</h5>
-                <ul class="list-unstyled quick-links ">
-                    <li><a href=##><i class="fa fa-angle-double-right"></i>Home</a></li>
-                    <li><a href=##><i class="fa fa-angle-double-right"></i>About</a></li>
-                    <li><a href=##><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-                    <li><a href=##><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-                    <li><a href=##><i class="fa fa-angle-double-right"></i>Videos</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4" style="margin-top: 35px;">
-                <h5 style="font-size: 20px;">Quick links</h5>
-                <ul class="list-unstyled quick-links" style="font-size: 16px;">
-                    <li><a href=##><i class="fa fa-angle-double-right"></i>Home</a></li>
-                    <li><a href=##><i class="fa fa-angle-double-right"></i>About</a></li>
-                    <li><a href=##><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-                    <li><a href=##><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-                    <li><a href=##><i class="fa fa-angle-double-right"></i>Videos</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4" style="margin-top: 35px;">
-                <h5 style="font-size: 20px;">Quick links</h5>
-                <ul class="list-unstyled quick-links" style="font-size: 16px;">
-                    <li><a href=##><i class="fa fa-angle-double-right"></i>Home</a></li>
-                    <li><a href=##><i class="fa fa-angle-double-right"></i>About</a></li>
-                    <li><a href=##><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-                    <li><a href=##><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-                    <li><a href=## title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-                <ul class="list-unstyled list-inline social text-center" style="font-size: 16px;">
-                    <li class="list-inline-item"><a href=##><i class="fa fa-facebook"></i></a></li>
-                    <li class="list-inline-item"><a href=##><i class="fa fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href=##><i class="fa fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href=##><i class="fa fa-google-plus"></i></a></li>
-                    <li class="list-inline-item"><a href=## target="_blank"><i class="fa fa-envelope"></i></a></li>
-                </ul>
-            </div>
-            <hr>
-        </div>	
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                <p><u><a href=..>We discarded electronic appliances such as computers, Smartphones, Televisions, Tablets, VCRs, Cameras, Tablets, Desktop Computers, etc. </p>
-                <p style="font-size: 16px;" class="h6">© All right Reversed.<a class="text-green ml-2" href="##" target="_blank">E-Waste Locator</a></p>
-            </div>
-            <hr>
-        </div>	
+
+  <!-- imageslider -->
+  <div class="w3-content w3-section" style="max-width:100% ; height: 50%;">
+    <img class="mySlides w3-animate-fading" src="s1.jpeg" style="width:100% ; height: 100%;">
+    <img class="mySlides w3-animate-fading" src="s2.jpeg" style="width:100%; height: 100%;">
+    <img class="mySlides w3-animate-fading" src="s3.jpg" style="width:100%; height: 100%;">
+    <img class="mySlides w3-animate-fading" src="s4.jpg" style="width:100%; height: 100%;">
+  </div>
+
+
+<section>
+  <div style=" margin-top: 0px">
+    <div style="height: 40px ;font-size: x-large; color: red; font-family: Arial, Helvetica, sans-serif; background-color: rgb(2, 32, 109);">
+        <div id="notification" >
+            <div id="notificationtxt"><strong>Notification:</strong> Please remember to dispose of your e-waste responsibly.E-waste includes devices such as computers, laptops and more<div>
+          </div>
     </div>
+</div>
 </section>
-<!-- ./Footer -->
 
-    <script>
-
-    $(document).ready(function(){
-    $('.login-info-box').fadeOut();
-    $('.login-show').addClass('show-log-panel');
-});
+<div >
+  <h1 style=" text-align: center; margin-top: 20px; font-weight: bolder;"> Electronic Waste (E-Waste)</h1>
+</div>
 
 
-$('.login-reg-panel input[type="radio"]').on('change', function() {
-    if($('#log-login-show').is(':checked')) {
-        $('.register-info-box').fadeOut(); 
-        $('.login-info-box').fadeIn();
+<div class="row" style="margin-top: 40px; padding-bottom: 20px;" >
+  <div class="col s7" style="margin-left: 80px ;margin-right: 0%;">
+    
+  <div class="row">
+    <div class="col s12 ">
+      <div class="card blue-grey darken-1" style="background-color: rgba(255, 255, 255, 0.258);border-radius: 40px;">
+        <div class="card-content white-text" style="margin: 20px;">
+          
+          <h2 style="text-align: center;"><b>Key Fact</b></h2>
+          <ul style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;" >
+            <li>E-waste is the fastest growing solid waste stream in the world.</li>
+            <li>In 2019, an estimated 53.6 million tonnes of e-waste were produced globally, but only 17.4% was documented as formally collected and recycled.</li>
+            <li>Lead is one of the common substances released into the environment if e-waste is recycled, stored or dumped using inferior activities, such as open burning.</li>
+            <li>E-waste recycling activities may have several adverse impacts on human health. Children and pregnant women are particularly vulnerable.</li>
+            <li>ILO and WHO estimate that millions of women and child labourers working in the informal recycling sector around the world may be at risk of e-waste exposure.</li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+  <div class="col s4" style=" margin-left: 0%;">
+    <div class="text-center">
+      <img src="s1.jpeg" class="rounded" alt="..." style="align-items: center; margin-top: 10%; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.749);">
+    </div>
+  </div>
+</div>
+  <!-- 2nd part     -->
+  <section>
+    <div style=" margin-top: 0px">
+      <div style="height: 40px ;font-size: x-large; color: red; font-family: Arial, Helvetica, sans-serif; background-color: rgb(2, 32, 109);">
+          <div id="notification" >
+              <div id="notificationtxt"><strong>Notification:</strong> 
+                Governments are implementing regulations and incentives to address the challenges posed by electronic waste.<div>
+            </div>
+      </div>
+  </div>
+  </section>
+
+  <h2 style=" text-align: center; margin-top: 20px; font-weight: bolder;"> Overview </h2>
+
+<div class="row">
+  <div class="col s7" style="margin-left: 80px ;margin-right: 0%;">
+    
+  <div class="row">
+    <div class="col s12 ">
+      <div class="text-center">
+        <img src="overview-removebg-preview.png" class="rounded" alt="..." style="align-items: center; margin-top: 10%; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.749);">
+      </div>
+    </div>
+  </div>
+ </div>
+
+  <div class="col s4" style=" margin-left: 0%; margin-top: 8%;">
+    <div class="card blue-grey darken-1" style="margin-left: 0%;background-color: rgba(255, 255, 255, 0); border: 0px; margin-right: 20px;">
+      <div class="card-content white-text" style="margin: 20px;">
         
-        $('.white-panel').addClass('right-log');
-        $('.register-show').addClass('show-log-panel');
-        $('.login-show').removeClass('show-log-panel');
+        <p style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+          When e-waste is treated using inferior activities,
+          it can release as many as 1000 different
+          chemical substances into the environment,
+          including harmful neurotoxicants such as lead.
+          Pregnant women and children are particularly
+          vulnerable due to their unique pathways of
+          exposure and their developmental status. The
+          International Labour Organization (ILO)
+          estimates that 16.5 million children were working
+           in the industrial sector in 2020, of which waste
+          processing is a subsector
+
+        </p>
         
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- map -->
+
+  <!-- Footer -->
+	<section id="footer" style="margin-top: 300px; background-color:rgb(2, 32, 109); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 16px; font-weight: bold;">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4" style="margin-top: 35px;">
+					<h5 style="font-size: 20px;">Quick links</h5>
+					<ul class="list-unstyled quick-links ">
+						<li><a href=##><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href=##><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href=##><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href=##><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href=##><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4" style="margin-top: 35px;">
+					<h5 style="font-size: 20px;">Quick links</h5>
+					<ul class="list-unstyled quick-links" style="font-size: 16px;">
+						<li><a href=##><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href=##><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href=##><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href=##><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href=##><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4" style="margin-top: 35px;">
+					<h5 style="font-size: 20px;">Quick links</h5>
+					<ul class="list-unstyled quick-links" style="font-size: 16px;">
+						<li><a href=##><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href=##><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href=##><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href=##><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href=## title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center" style="font-size: 16px;">
+						<li class="list-inline-item"><a href=##><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href=##><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href=##><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href=##><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href=## target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p><u><a href=..>We discarded electronic appliances such as computers, Smartphones, Televisions, Tablets, VCRs, Cameras, Tablets, Desktop Computers, etc. </p>
+					<p style="font-size: 16px;" class="h6">© All right Reversed.<a class="text-green ml-2" href="##" target="_blank">E-Waste Locator</a></p>
+				</div>
+				<hr>
+			</div>	
+		</div>
+	</section>
+	<!-- ./Footer -->
+   <!-- imageslider -->
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 5000);    
     }
-    else if($('#log-reg-show').is(':checked')) {
-        $('.register-info-box').fadeIn();
-        $('.login-info-box').fadeOut();
-        
-        $('.white-panel').removeClass('right-log');
-        
-        $('.login-show').addClass('show-log-panel');
-        $('.register-show').removeClass('show-log-panel');
-    }
-});
-  
-
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
